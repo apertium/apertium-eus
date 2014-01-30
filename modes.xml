@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="eus-morph">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="eus.automorf.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="eus-gener">
+    <pipeline>
+      <program name="lt-proc -g">
+        <file name="eus.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="eus-tagger">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="eus.automorf.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="eus.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="eus-disam">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="eus.automorf.bin"/>
+      </program>
+      <program name="cg-conv -a -l" />
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-eus.eus.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+</modes>

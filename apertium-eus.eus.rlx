@@ -1,0 +1,15 @@
+DELIMITERS = (sent);
+
+LIST Nom = n;
+LIST Verb = vblex;
+LIST Det = det;
+LIST Prn = prn;
+LIST Prep = pr;
+
+LIST Erg = ("k" post);
+
+LIST Izan = ("izan");
+
+SECTION
+
+REMOVE Erg IF (1C Izan);
