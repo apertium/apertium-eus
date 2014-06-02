@@ -5,6 +5,7 @@
 /Makefile.am -text
 /NEWS -text
 /README -text
+/apertium-eus.eus.acx -text
 /apertium-eus.eus.dix -text
 /apertium-eus.eus.rlx -text
 /apertium-eus.pc.in -text
