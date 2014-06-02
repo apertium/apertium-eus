@@ -11,4 +11,5 @@
 /autogen.sh -text
 /configure.ac -text
 dev/add-lemma.py -text
+/eus.prob -text
 /modes.xml -text
