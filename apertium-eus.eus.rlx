@@ -5,11 +5,21 @@ LIST Verb = vblex;
 LIST Det = det;
 LIST Prn = prn;
 LIST Prep = pr;
+LIST Ger = ger;
+LIST Post = post spost ;
 
 LIST Erg = ("k" post);
+LIST Dat = ("i" post) ;
+LIST Loc = ("an" post) ;
+LIST Abl = ("tik" post) ;
 
-LIST Izan = ("izan");
+LIST Izan = "izan";
+LIST Zehar = "zehar" ;
 
 SECTION
 
 REMOVE Erg IF (1C Izan);
+
+REMOVE Det IF (-1 Dat) (1 Ger LINK 1 Izan);
+
+SELECT Post IF (0 Zehar) (-1/* Loc OR Abl) ;
