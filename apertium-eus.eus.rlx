@@ -28,7 +28,7 @@ SECTION
 
 REMOVE Erg IF (1C Izan);
 
-REMOVE Det IF (-1 Dat) (1 Ger LINK 1 Izan);
+REMOVE Det IF (-1/* Dat) (1 Ger LINK 1 Izan);
 
 SELECT Post IF (0 Zehar) (-1/* Loc OR Abl) ;
 
