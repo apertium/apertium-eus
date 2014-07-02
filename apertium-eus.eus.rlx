@@ -36,7 +36,7 @@ SELECT Post IF (0 Zehar) (-1/* Loc OR Abl) ;
 
 REMOVE A IF (0 Bere LINK 0/* Gen) ;
 
-SELECT Verb IF (-1 Abl OR Adv) (0 Post OR Verb) ;
+SELECT Verb IF (-1/* Abl OR Adv) (0 Post OR Verb) ;
 
 SELECT Adv IF (0 Adv OR N LINK 0/* Ins) ;
 
