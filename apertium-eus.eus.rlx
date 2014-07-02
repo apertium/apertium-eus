@@ -1,9 +1,12 @@
 DELIMITERS = (sent);
+SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
+
 
 LIST Nom = n;
 LIST Verb = vblex;
 LIST Det = det;
-LIST Prn = prn;
+LIST Pron = prn;
+LIST A = adj ; 
 LIST Prep = pr;
 LIST Ger = ger;
 LIST Post = post spost ;
@@ -12,9 +15,11 @@ LIST Erg = ("k" post);
 LIST Dat = ("i" post) ;
 LIST Loc = ("an" post) ;
 LIST Abl = ("tik" post) ;
+LIST Gen = ("en" post) ; 
 
 LIST Izan = "izan";
 LIST Zehar = "zehar" ;
+LIST Bere = ("ber" prn pers) ; 
 
 SECTION
 
@@ -23,3 +28,5 @@ REMOVE Erg IF (1C Izan);
 REMOVE Det IF (-1 Dat) (1 Ger LINK 1 Izan);
 
 SELECT Post IF (0 Zehar) (-1/* Loc OR Abl) ;
+
+REMOVE A IF (0 Bere LINK 0/* Gen) ;
