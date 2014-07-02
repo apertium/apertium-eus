@@ -12,12 +12,14 @@ LIST Pr = pr;
 LIST Ger = ger;
 LIST Post = post spost ;
 LIST Adv = adv ;
+LIST Art = ("a" det) ; 
 
 LIST Erg = ("k" post);
 LIST Dat = ("i" post) ;
 LIST Loc = ("an" post) ;
 LIST Abl = ("tik" post) ;
 LIST Gen = ("en" post) ;
+LIST Gen2 = ("ko" post) ;
 LIST Ins = ("z" post) ;
 
 LIST Izan = "izan";
@@ -37,3 +39,7 @@ REMOVE A IF (0 Bere LINK 0/* Gen) ;
 SELECT Verb IF (-1 Abl OR Adv) (0 Post OR Verb) ;
 
 SELECT Adv IF (0 Adv OR N LINK 0/* Ins) ;
+
+## This is bad, it should work with "ko" in any subreading.
+SELECT SUB:1 Gen2 IF (0 Gen2 OR N) (1 N LINK 0/* Art) ;
+    ## Beti, etxe handiaren aurreko lorategian jolasten dute elkarrekin.
