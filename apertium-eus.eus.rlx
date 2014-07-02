@@ -10,12 +10,13 @@ LIST A = adj ;
 LIST Prep = pr;
 LIST Ger = ger;
 LIST Post = post spost ;
+LIST Adv = adv ;
 
 LIST Erg = ("k" post);
 LIST Dat = ("i" post) ;
 LIST Loc = ("an" post) ;
 LIST Abl = ("tik" post) ;
-LIST Gen = ("en" post) ; 
+LIST Gen = ("en" post) ;
 
 LIST Izan = "izan";
 LIST Zehar = "zehar" ;
@@ -30,3 +31,5 @@ REMOVE Det IF (-1 Dat) (1 Ger LINK 1 Izan);
 SELECT Post IF (0 Zehar) (-1/* Loc OR Abl) ;
 
 REMOVE A IF (0 Bere LINK 0/* Gen) ;
+
+SELECT Verb IF (-1 Abl OR Adv) (0 Post OR Verb) ;
