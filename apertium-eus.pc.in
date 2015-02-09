@@ -1,7 +1,10 @@
-prefix=/home/fran/local
+prefix=@prefix@
 exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
+libdir=@libdir@
+dir=@libdir@/apertium/apertium-eus
+srcdir=@datarootdir@/apertium/apertium-eus
 
 Name: apertium-eus
-Description: Finite-state morphological transducer and constraint grammar for Faroese 
-Version: 0.1.0
+Description: Finite-state morphological transducer and constraint grammar for Basque 
+Version: @VERSION@
+
