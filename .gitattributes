@@ -9,6 +9,7 @@
 /apertium-eus.eus.dix -text
 /apertium-eus.eus.rlx -text
 /apertium-eus.pc.in -text
+/apertium-eus.post-eus.dix -text
 /autogen.sh -text
 /configure.ac -text
 dev/add-lemma.py -text
