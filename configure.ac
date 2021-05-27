@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Basque], [0.1.0], [francis.tyers@gmail.com], [apertium-eus], [http://wiki.apertium.org/wiki/Apertium-eus])
+AC_INIT([Apertium Basque], [0.1.0], [francis.tyers@gmail.com], [apertium-eus], [https://wiki.apertium.org/wiki/Apertium-eus])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
