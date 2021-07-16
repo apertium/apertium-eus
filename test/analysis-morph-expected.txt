@@ -1,0 +1,10 @@
+[6L0aRzp_GZwy#0] ^300/300<num>$ ^liburu/liburu<n>$ ^berri/berri<n>/berri<adj><izo>/berritu<vblex><inf>$
+[/6L0aRzp_GZwy]
+[Ie68AJI8Xnzd#0] ^azken/azken<n>/azken<adj><izl>/azkendu<vblex><inf>$ ^lege/lege<n>$ ^proiektuaren/proiektu<n>+a<det><art><sg>+en<post>$
+[/Ie68AJI8Xnzd]
+[S6Kr7jw8qP0y#0] ^bulegoko/bulego<n>+a<det><art><sg>+ko<post>$ ^zuzendari/zuzendari<n>$ ^ohian/ohi<adj><izo>+a<det><art><sg>+an<post>$
+[/S6Kr7jw8qP0y]
+[ilTzbxYl7eFG#0] ^Nire/ni<prn><pers><p1><sg>+en<post>$ ^etxe/etxe<n>$ ^gorrian/gorri<n>+a<det><art><sg>+an<post>/gorri<adj><izo>+a<det><art><sg>+an<post>$
+[/ilTzbxYl7eFG]
+[ze6O3iSL97AC#0] ^Gasteiztar/*Gasteiztar$ ^laguna/lagun<n>+a<det><art><sg>$
+[/ze6O3iSL97AC]
